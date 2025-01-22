@@ -9,7 +9,7 @@ const client = twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TO
 //config variables
 const currency = "inr";
 const deliveryCharge = 5;
-const frontend_URL = 'http://localhost:3004';
+const frontend_URL = 'https://fiveguyz-frontend.onrender.com';
 const sendMessage=async(newOrder,OrderType)=>{
     const {email,street,city,zipcode,phone}=newOrder.address;
      const item=newOrder.items;
